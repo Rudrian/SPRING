@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PrincipalController {
 
     @GetMapping("/compras")
-    public String getCompras() {
-        return "Listando todas as compras!";
+    public String compras() {
+        return "compras!";
     }
 
     @GetMapping("/vendas")
-    public String getVendas() {
-        return "Listando todas as vendas!";
+    public String vendas() {
+        return "vendas";
     }
 
     @GetMapping("/estoque")
-    public String getEstoque() {
-        return "Listando todos os itens no estoque!";
+    public String estoque() {
+        return "estoque";
     }
+	
 }
-
