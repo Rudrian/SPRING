@@ -1,0 +1,24 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class PrincipalController {
+
+    @GetMapping("/compras")
+    public String getCompras() {
+        return "Listando todas as compras!";
+    }
+
+    @GetMapping("/vendas")
+    public String getVendas() {
+        return "Listando todas as vendas!";
+    }
+
+    @GetMapping("/estoque")
+    public String getEstoque() {
+        return "Listando todos os itens no estoque!";
+    }
+}
+
